@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastro de Produtos</title>
+        <link rel="stylesheet" href="assets/static/css/style.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+
+    </head>
+
+    <body class="container_type3">
+        
+        <header class="headerCliente">
+            <img src="assets/images/exit.png" class="exit_icon">
+            <img src="assets/images/hamburguer.png" class="hamburguer_icon">
+            <h1 class="header_logo_h1">Mauro Tecnologia</h1>
+            <nav class="nav_menu_click"><br>
+                <h1 class="linhas">Mauro Tecnologia</h1>
+              
+                <div>
+                    <div class="linhas">Foto Cliente</div>                    
+                    <h2 class="linhas">Nome Cliente</h2>
+                    
+                </div>
+                <ul class="list_style">                   
+                    <li class="linhas"><span> <i class="fa fa-pie-chart"></i></span><a href="painel.html" class="links">Painel</a></li>
+                    <li class="linhas"><span><i class='fas fa-database'></i></span><a href="produtos.html" class="links">Produtos</a></li>
+                    <li class="linhas"><span><i class='fas fa-laptop-house'></i></span><a href="estoque.html" class="links">Estoque</a></li>
+                    <li class="linhas"><span><i class="fa fa-cart-arrow-down"></i></span><a href="compras.html" class="links">Compras</a></li>
+                    <li class="linhas"><span><i class='fas fa-shipping-fast'></i></span><a href="vendas.html" class="links">Vendas</a></li>
+                    <li class="linhas"><span>&#x1f5b3;</span><a href="lojavirtua.html" class="links">Loja Virtual</a></li>
+                    <li class="linhas"><span><i class='far fa-money-bill-alt'></i></span><a href="" class="links">Financeiro</a></li>
+                    <li class="linhas"><span><i class='fas fa-balance-scale'></i></span><a href="" class="links">Contábil</a></li>
+                    <li class="linhas"><span><i class='fas fa-cogs'></i></span> <a href="" class="links">Configurações</a></li>
+                    <li class="linhas"><span>&#128383;</span><a href="" class="links">Suporte</a></li>
+                </ul>
+
+            </nav>
+        </header>
+            <main class="main_novosProdutos">            
+                                         
+                <h1  class="main_titulo">Cadastro do Estoque</h1>
+                <div class="main_estoque">
+    
+                    <form method="" class="form_estoque">
+                    <div class="main_estoque_form">
+                        <label for="produto_estoque" class="label_input2">
+                            Nome do produto:
+                            <select type="text" name="" class="input_type2" id="produto_estoque">
+                                <option>Chip - OI - Pre pago</option>
+                                <option>Capa Iphone - Gorilla Glass</option>
+                                <option>Fone de ouvido - Philips</option>
+                                <option>Folha de Sulfite - Chamequinho</option>
+                                
+                            </select>
+                        </label>                    
+                    
+                        <label for="estoquemaximo" class="label_input2">
+                            Estoque máximo:
+                            <input type="text" name="" class="input_type2" id="estoquemaximo"placeholder="Quantidade máxima permitida">
+                        </label>
+                        <label for="estoqueminimo" class="label_input2">
+                            Estoque mínimo:
+                            <input type="text" name="" class="input_type2" id="estoqueminimo"placeholder="Quantidade minima">
+                        </label>                    
+                        <label for="quantidade-por-embalagem" class="label_input2">
+                            Quantidade por embalagem:
+                             <input type="text" name="" class="input_type2" id="quantidade-por-embalagem"placeholder="Quantidade por embalagem">
+                         </label>
+                         <label for="periodicidade-de-inventario" class="label_input2">
+                            Periodicidade de inventário:
+                             <input type="text" name="" class="input_type2" id="periodicidade-de-inventario"placeholder="Priodicidade de inventário">
+                         </label>                     
+                                                       
+                      
+                        <label for="data-ultima-compra" class="label_input2">
+                           Data da última compra:
+                            <input type="text" name="" class="input_type2" id="data-ultima-compra"placeholder="Data da última compra">
+                        </label>
+
+                        <label for="ultimo-preco-compra" class="label_input2">
+                            Ultimo preço de compra:
+                            <input type="text" name="" class="input_type2" id="ultimo-preco-compra"placeholder="Ultimo preço de compra">
+                        </label>
+                        <label for="despesa-importacao" class="label_input2">
+                            Despesa de importação:
+                            <input type="text" name="" class="input_type2" id="despesa-importacao"placeholder="Despesa de importação:">
+                        </label> 
+                        <label for="tolerancia" class="label_input2">
+                            Tolerância:
+                            <input type="text" name="" class="input_type2" id="tolerancia"placeholder="Tolerância">
+                        </label>                   
+                    </div>           
+                  
+                    <div>
+                        <input type="submit" value="Cadastrar Produto" class="button">
+                    </div>
+                    </form>
+                </div>
+            </main>       
+
+    </body>
+    <script src="assets/static/js/menuHamb.js"></script>
+
+</html>

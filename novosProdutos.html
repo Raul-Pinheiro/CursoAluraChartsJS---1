@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastro Produtos</title>
+        <link rel="stylesheet" href="assets/static/css/style.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+
+    </head>
+
+    <body class="container_type3">
+        
+        <header class="headerCliente">
+            <img src="assets/images/exit.png" class="exit_icon">
+            <img src="assets/images/hamburguer.png" class="hamburguer_icon">
+            <h1 class="header_logo_h1">Mauro Tecnologia</h1>
+            <nav class="nav_menu_click"><br>
+                <h1 class="linhas">Mauro Tecnologia</h1>
+              
+                <div>
+                    <div class="linhas">Foto Cliente</div>                    
+                    <h2 class="linhas">Nome Cliente</h2>
+                    
+                </div>
+                <ul class="list_style">                   
+                    <li class="linhas"><span> <i class="fa fa-pie-chart"></i></span><a href="painel.html" class="links">Painel</a></li>
+                    <li class="linhas"><span><i class='fas fa-database'></i></span><a href="produtos.html" class="links">Produtos</a></li>
+                    <li class="linhas"><span><i class='fas fa-laptop-house'></i></span><a href="estoque.html" class="links">Estoque</a></li>
+                    <li class="linhas"><span><i class="fa fa-cart-arrow-down"></i></span><a href="compras.html" class="links">Compras</a></li>
+                    <li class="linhas"><span><i class='fas fa-shipping-fast'></i></span><a href="vendas.html" class="links">Vendas</a></li>
+                    <li class="linhas"><span>&#x1f5b3;</span><a href="lojavirtua.html" class="links">Loja Virtual</a></li>
+                    <li class="linhas"><span><i class='far fa-money-bill-alt'></i></span><a href="" class="links">Financeiro</a></li>
+                    <li class="linhas"><span><i class='fas fa-balance-scale'></i></span><a href="" class="links">Contábil</a></li>
+                    <li class="linhas"><span><i class='fas fa-cogs'></i></span> <a href="" class="links">Configurações</a></li>
+                    <li class="linhas"><span>&#128383;</span><a href="" class="links">Suporte</a></li>
+                </ul>
+
+            </nav>
+        </header>
+            <main class="main_novosProdutos">            
+               
+                          
+                <h1  class="main_titulo">Cadastro de Produtos</h1>
+                <div class="main_novosProdutos_form_box">
+    
+                    <form method="" class="main_novosProdutos_form">
+                    <div class="form_line">
+
+                        <label for="origemproduto" class="label_input2">
+                            Origem:
+                            <input type="text" name="" class="input_type2" id="origemproduto"placeholder="Origem do produto">
+                        </label>
+                    
+                        <label for="codigo" class="label_input2">
+                            Insira o Código:
+                            <input type="text" name="" class="input_type2" id="codigo"placeholder="Código do produto">
+                        </label>
+                        <label for="nomeproduto" class="label_input2">
+                            Nome do Produto:
+                            <input type="text" name="" class="input_type3" id="nomeproduto"placeholder="Nome do produto">
+                        </label>
+
+                        <label for="tipoproduto" class="label_input2">
+                            Tipo do Produto:
+                            <input type="text" name="" class="input_type2" id="tipoproduto"placeholder="Tipo do produto">
+                        </label>
+                        
+                    </div>
+
+
+                    <div class="form_line"> 
+                        <label for="unidadeproduto" class="label_input2">
+                            Unidade do Produto:
+                            <select class="input_type2" id="unidadeproduto">
+                                <option>quilograma (Kg)</option>
+                                <option>grama (g)</option>
+                                <option>mililitros (mL)</option>                               
+                                <option>polegadas(pol)</option>
+                                <option>libras (lb)</option>
+                                <option>metros (m)</option>
+                                <option>centimetros (cm)</option>                               
+
+                            </select>
+                        </label>
+                        <label for="zonafrancaproduto" class="label_input2">
+                            Produto da Zona Franca:
+                            <input type="text" name="" class="input_type2" id="zonafrancaproduto"placeholder="Produto da Zona Franca?">
+                        </label>
+
+                        <label for="vendedoresproduto" class="label_input2">
+                            Grupo de vendedores:
+                            <input type="text" name="" class="input_type2" id="vendedoresproduto"placeholder="Grupo de Vendas">
+                        </label>
+                        <label for="contacontabil" class="label_input2">
+                            Conta Contábil:
+                            <input type="text" name="" class="input_type3" id="contacontabil"placeholder="Contabilidade">
+                        </label>
+                    </div>
+
+                    <div class="form_line">
+
+                        <label for="situacao" class="label_input2">
+                            Situação:
+                            <select class="input_type2" id="situacao">
+                                <option>Ativo</option>
+                                <option>Inativo</option>
+                            </select>
+                        </label>
+                        <label for="fabricanteproduto" class="label_input2">
+                            Fabricante:
+                            <input type="text" name="" class="input_type2" id="fabricanteproduto"placeholder="Insira o nome do fabricante">
+                        </label>
+                        <label for="modeloproduto" class="label_input2">
+                            Modelo:
+                            <input type="text" name="" class="input_type2" id="modeloproduto"placeholder="Insira o modelo do produto">
+                        </label>
+                        <label for="grupocompradores" class="label_input2">
+                            Grupo de compradores:
+                            <input type="text" name="" class="input_type3" id="grupocompradores"placeholder="Insira o grupo de compradores">
+                        </label>
+
+                    </div>
+                    <div class="form_line">
+                        <label for="forndecedor" class="label_input2">
+                            Loja:
+                            <input type="text" name="" class="input_type2" id="loja"placeholder="Insira o nome da loja">
+                        </label>
+                        <label for="loja" class="label_input2">
+                            Fornecedor Padrão:
+                            <input type="text" name="" class="input_type3" id="forndecedor"placeholder="Insira o nome do fornecedor">
+                        </label>
+                        <label for="centrodecusto" class="label_input2">
+                            Centro de Custo:
+                            <input type="text" name="" class="input_type2" id="centrodecusto"placeholder="Insira o centro de custo">
+                        </label>
+                        <label for="familia" class="label_input2">
+                            Família:
+                            <input type="text" name="" class="input_type2" id="familia"placeholder="Insira a familia do produto">
+                        </label>
+                    </div>
+                    <div class="form_line">
+                        <label for="produtopai" class="label_input2">
+                            Produto pai:
+                            <input type="text" name="" class="input_type2" id="produtopai"placeholder="Insira o prod. pai">
+                        </label>
+                        <label for="rastreabilidade" class="label_input2">
+                            Rastreabilidade:
+                            <input type="text" name="" class="input_type3" id="rastreabilidade"placeholder="rastreabilidade">
+                        </label>
+                        <label for="codigodebarras" class="label_input2">
+                            Código de barras:
+                            <input type="text" name="" class="input_type3" id="codigodebarras"placeholder="codigodebarras">
+                        </label>
+                       
+                    </div>
+                   <div class="form_line">
+                        <label for="qrcode" class="label_input3">
+                            Insira o QR Code:
+                            <input type="file" id="qrcode" class="input_type4">
+                        </label>
+                        <label for="fotoproduto" class="label_input3">
+                            Insira uma foto:
+                            <input type="file" id="fotoproduto" class="input_type4">
+                        </label>
+                     </div>
+                     
+                     <input type="submit" value="Cadastrar Produto" class="button">
+                    </form>
+                </div>
+            </main>       
+
+    </body>
+    <script src="assets/static/js/menuHamb.js"></script>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Painel</title>
+        <link rel="stylesheet" href="assets/static/css/style.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    
+
+    </head>
+    <body class="container_type3">
+        
+        <header class="headerCliente">
+            <img src="assets/images/exit.png" class="exit_icon">
+            <img src="assets/images/hamburguer.png" class="hamburguer_icon">
+            <h1 class="header_logo_h1">Mauro Tecnologia</h1>
+            <nav class="nav_menu_click"><br>
+                <h1 class="linhas">Mauro Tecnologia</h1>
+              
+                <div>
+                    <div class="linhas">Foto Cliente</div>                    
+                    <h2 class="linhas">Nome Cliente</h2>
+                    
+                </div>
+                <ul class="list_style">                   
+                    <li class="linhas"><span> <i class="fa fa-pie-chart"></i></span><a href="painel.html" class="links">Painel</a></li>
+                    <li class="linhas"><span><i class='fas fa-database'></i></span><a href="produtos.html" class="links">Produtos</a></li>
+                    <li class="linhas"><span><i class='fas fa-laptop-house'></i></span><a href="estoque.html" class="links">Estoque</a></li>
+                    <li class="linhas"><span><i class="fa fa-cart-arrow-down"></i></span><a href="compras.html" class="links">Compras</a></li>
+                    <li class="linhas"><span><i class='fas fa-shipping-fast'></i></span><a href="vendas.html" class="links">Vendas</a></li>
+                    <li class="linhas"><span>&#x1f5b3;</span><a href="lojavirtua.html" class="links">Loja Virtual</a></li>
+                    <li class="linhas"><span><i class='far fa-money-bill-alt'></i></span><a href="" class="links">Financeiro</a></li>
+                    <li class="linhas"><span><i class='fas fa-balance-scale'></i></span><a href="" class="links">Contábil</a></li>
+                    <li class="linhas"><span><i class='fas fa-cogs'></i></span> <a href="" class="links">Configurações</a></li>
+                    <li class="linhas"><span>&#128383;</span><a href="" class="links">Suporte</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main class="main_products">
+            <div class="main_products_title">
+                <h1 class="main_titulo">Painel de Produtos</h1>
+            </div>
+            <div class="main_products_header">
+                <form>
+                    <label class="label_input2">
+                        <input class="input_type3"type="search" placeholder="Digite o nome de um produto">
+                    </label>
+                </form>
+                <button class="button2"><a href="novosProdutos.html" class="links">Incluir</a></button>
+                <button class="button2"><a href="" class="links">Excluir</a></button>
+                <button class="button2"><a href="" class="links">Editar</a></button>
+            </div>
+
+            <div class="main_products_table_container">
+
+                <table class="table">
+                    <thead class="thead">
+                        <tr class="thead_row">
+                            <th  class="thead_column">Produto</th>
+                            <th  class="thead_column">Tipo</th>
+                            <th  class="thead_column">Unidade</th>
+                            <th  class="thead_column">Estoque atual</th>
+                            <th  class="thead_column">Estoque máximo</th>
+                            <th  class="thead_column">Estoque mínimo</th>
+                            <th  class="thead_column">Quantidade por embalagem</th>
+                            <th  class="thead_column">Preço de vendas</th>
+                            <th  class="thead_column">Data da ultima compra</th>
+                            <th  class="thead_column">Último preço de compra</th>                           
+                        </tr>
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr class="tbody_row">
+                            <td class="tbody_column">Chip da Oi</td>
+                            <td class="tbody_column">Slim</td>
+                            <td class="tbody_column">Pacote</td>
+                            <td class="tbody_column">20</td>
+                            <td class="tbody_column">30</td>
+                            <td class="tbody_column">25</td>
+                            <td class="tbody_column">3</td>
+                            <td class="tbody_column">R$10,00</td>
+                            <td class="tbody_column">23-08-2020</td>
+                            <td class="tbody_column">R$200,00</td>
+                        </tr>
+                        </tbody>
+
+                </table>
+
+            </div>
+
+
+
+
+        </main>
+
+    </body>
+    <script src="../Projeto_Mauro/assets/static/js/menuHamb.js"></script>
+</html>
+               

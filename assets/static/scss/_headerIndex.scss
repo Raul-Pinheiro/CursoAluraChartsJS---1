@@ -1,0 +1,41 @@
+%flex_row_between{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex_column_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagem_fundo{
+    background-image: url('../../images/businessf.jpg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    height:100%;
+    
+    
+
+.header{
+    grid-area:cabecalho;
+    height:$altura-header;
+ 
+    @extend %flex_row_between;
+    .header_logo{
+        margin:$margin-logo;
+     
+       
+    }
+    .header_socialMedia{
+        margin:$margin-socialmedia;
+        display:flex;     
+             
+
+    }
+}
+}
+
+
+

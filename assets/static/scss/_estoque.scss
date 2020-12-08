@@ -1,0 +1,17 @@
+.main_estoque_form{
+    display:flex;    
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.form_estoque{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:750px;
+    background-color:$color-box;
+    padding:20px;
+    border-radius:10px;
+}

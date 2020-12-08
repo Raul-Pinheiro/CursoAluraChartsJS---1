@@ -1,0 +1,422 @@
+/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+
+/* Váriaveis de Projeto: Fontes*/
+
+$h1:'Electrolize', sans-serif;  
+$h2:'Electrolize', sans-serif;
+$p:'Electrolize', sans-serif;
+$label:'Jura', sans-serif;
+$placeholder:'Electrolize', sans-serif;
+$submit:'Electrolize', sans-serif;
+$li:'Electrolize', sans-serif;
+$a:'Electrolize', sans-serif;
+$select:'Electrolize', sans-serif;
+$table:'Electrolize', sans-serif;
+$a-table:'Electrolize', sans-serif;
+
+
+/* Váriaveis de Projeto: Cor de Fundo*/
+
+$color-containerType1: rgb(235, 232, 232);
+$color-containerType2: rgb(82, 79, 76);
+$color-containerType3: #94b3b3;
+$color-headerCliente:#246f81;
+$color_headerClientenav:rgb(31, 61, 70);
+$color-headerPrincipal:#73b9b9;
+$color-mainCliente:#73b9b9;
+$color-mainPrincipal:#908570;
+$color-footerCliente:yellowgreen;
+$color-footerPrincipal:rgb(31, 61, 70);
+$botao_padrao:rgb(31, 61, 70);
+$color-box:rgb(236, 236, 236);
+$color-box2:rgb(31, 61, 70);
+$color-tableheadback:rgb(31, 61, 70);
+$color-tablebodyback:#246f81;
+
+
+/* Váriaveis de Projeto: Cor de Letra*/
+
+$color-h1:	rgb(255, 246, 246);
+$color-h2:	rgb(255, 255, 255);
+$color-p:rgb(92, 48, 27);
+$color-label:rgb(0, 0, 0);
+$color-submit:rgb(217, 220, 223);
+$color-a:rgb(217, 220, 223);
+$color-hover:rgb(217, 220, 223);
+$color-select:black;
+$color-tableheadletter:rgb(217, 220, 223);
+$color-tablebodyletter:rgb(20, 53, 53);
+$color-a-table:rgb(12, 22, 36);
+$color-label2:rgb(217, 220, 223);
+
+/* Váriaveis de Projeto: Cor de Bordas*/
+$color-border1:rgb(141, 166, 175);
+$color-border2:black;
+$color-border3:blue;
+
+/* Váriaveis de Projeto: Tamanho de Fonte PC*/
+
+$size1-h1:20px;
+$size1-h2: 15px;
+$size1-p:15px;
+$size1-select:15px;
+$size1-tablehead:12pt;
+$size1-tablebody:10pt;
+$size1-atable:10px;
+$size1-a:10pt;
+$size-aindex:12pt;
+
+/* Váriaveis de Projeto: Tamanho de Fonte Tablets*/
+
+$size2-h1:20px;
+$size2-h2: 15px;
+$size2-p:12px;
+
+/* Váriaveis de Projeto: Tamanho de Fonte Celulares*/
+
+$size3-h1:20px;
+$size3-h2: 15px;
+$size3-p:12px;
+
+/* Váriaveis de Projeto: Altura e largura de cada grid*/
+$altura-header:fit-content;
+$altura-main:fit-content;
+$altura-footer:fit-content;
+
+/* Váriaveis de Projeto: Margens*/
+$margin-logo: auto 20px auto 230px;
+$margin-socialmedia:auto 50px auto 20px;
+
+
+
+
+/*Import de Layouts*/ 
+
+@import 'index';
+@import 'footer';
+@import 'forgotpw';
+@import 'headerIndex';
+@import 'suporte';
+@import 'headerCliente';
+@import 'painel';
+@import 'products';
+@import 'novosProdutos';
+@import 'estoque';
+@import 'gallery';
+    
+
+
+/*Body*/
+
+.container{
+
+    margin:0;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-areas: 
+        'cabecalho'
+        'conteudo'
+        'rodape';
+    background-color:$color-containerType1;
+}
+
+.container_type2{
+    margin:0;
+    background-color: $color-containerType2;
+     
+}
+
+.container_type3{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-containerType3;
+    width:100%;
+    height:100%;
+}
+/*Header*/
+.header_logo_h1{
+    color: $color-h1;
+    font-family: $h1;
+    text-align: center;
+}
+/*Main*/
+
+.main{
+    grid-area:conteudo;
+}
+
+/*Labels*/
+
+.label_input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:$color-label;   
+    font-family: $label;  
+}
+.label_input4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:$color-label2;   
+    font-family: $label;  
+}
+.label_input2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color:$color-label;   
+    font-family: $label; 
+    margin:10px;
+    padding:5px;
+}
+.label_input3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:$color-label2;   
+    font-family: $label; 
+    width:200px;
+    height:30px;
+    margin:5px;
+    padding:5px;
+    background-color: rgb(20, 53, 53);
+    border-radius: 5px;
+    &:hover{
+        background-color: $color-box2;
+        color:$color-label;
+        cursor:pointer;
+    }  
+}
+
+.input_type{
+    width:250px;
+    height:30px;
+    margin:20px;    
+    outline: none;
+    border:transparent;
+    border-radius: 5px;
+    border:1px solid $color-border2;
+    &[placeholder]{
+        font-family:$placeholder;
+        text-align: center;
+        font-family: $placeholder;
+    }
+}
+.input_type2{
+    width:200px;
+    height:30px;
+    margin:2px;    
+    outline: none;
+    border:transparent; 
+    border-radius: 4px;
+    border:1px solid $color-border2;    
+    &[placeholder]{
+        font-family:$placeholder;
+        text-align: left;
+        font-family: $placeholder;
+    }
+}
+.input_type3{
+    width:400px;
+    height:30px;
+    margin:2px; 
+    border-radius: 4px; 
+    outline: none;
+    border:1px solid $color-border2;     
+    &[placeholder]{
+        font-family:$placeholder;
+        text-align: left;
+        font-family: $placeholder;
+    }
+}
+
+
+
+/*Botoes*/
+.button{
+
+    width:250px;
+    height:30px;
+    margin-top:20px;
+    outline: none;
+    background-color: $botao_padrao;
+    font-family: $submit;
+    border:transparent;
+    color:$color-submit;
+    border-radius: 5px;
+    text-transform: uppercase;
+    &:hover{
+        font-weight:bold;
+        text-decoration: underline;
+    }
+}
+
+
+.button2{
+
+    width: 150px;
+    height:30px;  
+    margin-right: 20px;
+    padding:auto;
+    outline: none;
+    background-color: $botao_padrao;
+    font-family: $submit;
+    border:transparent;
+    color:$color-submit;
+    border-radius: 5px;
+    text-transform: uppercase;
+    &:hover{
+        font-weight:bold;
+        text-decoration: underline;
+    }
+}
+.button3{
+
+    width:250px;
+    height:30px;
+    margin-top:20px;
+    outline: none;
+    background-color: $botao_padrao;
+    font-family: $submit;
+    border:transparent;
+    color:$color-submit;
+    border-radius: 5px;
+    text-transform: uppercase;
+    &:hover{
+        font-weight:bold;
+        text-decoration: underline;
+    }
+}
+
+/*Links*/
+
+.links{
+    color:$color-a;
+    font-family: $a;
+    text-align: center;
+    padding:10px;    
+    border-radius: 5px;
+    font-size:$size1-a;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.links2{
+    color:white;
+    font-family: $a;
+    text-align: center;
+    padding:10px;    
+    border-radius: 5px;
+    font-size:$size-aindex;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.links_table{
+    color:$color-a-table;
+    font-family: $a-table;
+    text-align: center;
+    font-size:$size1-atable;
+    padding:5px;    
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+
+}
+
+/*Textarea*/
+.textarea{
+    margin-top: 20px;
+    width:825px;
+    height:200px;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    line-height: 1.5;    
+    border-radius: 5px;  
+    font-size: .9rem;
+    letter-spacing: 1px;
+ 
+}
+
+/*Selects*/
+
+.select{
+
+    width:250px;
+    height:30px;
+    margin:20px;
+    outline: none;
+    border:1px solid $color-border2;
+    border-radius: 5px;
+    .select_options{
+
+        color:$color-select;
+        font-family: $select;       
+        font-size:$size1-select;
+    }  
+
+}
+/*Titulos*/
+.main_titulo{
+    color:$color-h1;
+    font-family: $h1;
+    font-size:$size1-h1;
+    font-weight:bold;
+    margin-top:60px;
+    text-align: center;
+}
+.main_titulo2{
+    color:$color-h1;
+    font-family: $h1;
+    font-size:$size1-h1;
+    font-weight:bold;
+    margin-top:0;
+    text-align: center;
+}
+
+/*CRUD*/
+.main_crud{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    margin-top: 20px;
+    width: 100%;
+    .main_crud_list{
+        list-style: none;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+}
+
+
+/*Linhas de formulario*/
+.form_line{
+    display:flex;
+}

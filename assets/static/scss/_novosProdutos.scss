@@ -1,0 +1,36 @@
+%display-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%display-row{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.main_novosProdutos{
+    width:100%;
+   @extend %display-column;
+}
+
+
+.main_novosProdutos_form_box{
+    width:fit-content;
+    height: fit-content;
+    @extend %display-column;
+    margin:auto;    
+    border:1px solid $color-border1;
+    padding:15px;
+    background-color: $color-box;
+}
+
+.main_novosProdutos_form{
+    @extend %display-column;
+}
+
+input[type="file"]{
+    display: none;
+}

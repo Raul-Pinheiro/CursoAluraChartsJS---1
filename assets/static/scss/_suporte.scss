@@ -1,0 +1,30 @@
+.label_input_row{
+
+    display: flex;
+}
+#main_container_type2_suporte,#main_suporte_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main_suporte_box{
+    margin-top:20px;
+    padding:20px;
+    width:fit-content;
+    height: fit-content;
+    background-color: $color-box; 
+   
+    border-radius: 10px; 
+    border:1px solid transparent;  
+    box-shadow: 2px 2px 3px grey; 
+    #main_suporte_description{
+
+        text-align: justify;
+        font-family: $p;
+        font-size:$size1-p;
+        color:$color-p;
+        text-indent: 15PX;
+    }
+}
+
